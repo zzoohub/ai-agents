@@ -33,7 +33,7 @@ content_planner_agent = Agent(
     name="ContentPlannerAgent",
     description=CONTENT_PLANNER_DESCRIPTION,
     instruction=CONTENT_PLANNER_PROMPT,
-    model="gemini-2.5-flash-lite",
+    model="gemini-2.5-flash",
     output_schema=ContentPlanOutput,
     output_key="content_planner_output",
 )

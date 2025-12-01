@@ -7,9 +7,9 @@ from .sub_agents.content_planner.agent import content_planner_agent
 
 shorts_producer_agent = Agent(
     name="ShortsProducerAgent",
-    model="gemini-2.5-flash-lite",
     description=SHORTS_PRODUCER_DESCRIPTION,
     instruction=SHORTS_PRODUCER_PROMPT,
+    model="gemini-2.5-flash",
     tools=[
         AgentTool(agent=content_planner_agent),
         AgentTool(agent=asset_generator_agent),
